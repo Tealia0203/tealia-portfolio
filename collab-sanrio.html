@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>田季發爺 X 三麗歐</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>田季發爺 X 三麗歐</h1>
+    <a href="index.html" class="back-link">← 返回首頁</a>
+  </header>
+  <section class="grid">
+
+    <div class="item">
+      <img src="images/collab-sanrio-1.jpg" alt="作品 1" onclick="openLightbox(this.src, this.alt)"/>
+      <p>作品 1</p>
+    </div>
+
+    <div class="item">
+      <img src="images/collab-sanrio-2.jpg" alt="作品 2" onclick="openLightbox(this.src, this.alt)"/>
+      <p>作品 2</p>
+    </div>
+
+    <div class="item">
+      <img src="images/collab-sanrio-3.jpg" alt="作品 3" onclick="openLightbox(this.src, this.alt)"/>
+      <p>作品 3</p>
+    </div>
+
+  </section>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content">
+        <span class="close-btn" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script>
+    function openLightbox(src, alt) {
+        document.getElementById('lightbox').style.display = 'flex';
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox-caption').textContent = alt;
+    }
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

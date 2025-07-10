@@ -5,131 +5,86 @@ body {
     background-color: #FAF3E0;
     color: #3E3E3E;
 }
-
 header {
     text-align: center;
     padding: 40px 20px;
     background-color: #D7A86E;
     color: white;
 }
-
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
-
 header p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
-
-.portfolio {
-    padding: 40px 20px;
-}
-
-.portfolio h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 30px 20px;
     gap: 20px;
 }
-
 .item {
-    background-color: white;
+    background: white;
     border: 2px solid #A47148;
     border-radius: 8px;
+    width: 280px;
     overflow: hidden;
-    width: 300px;
     text-align: center;
-    cursor: pointer;
 }
-
 .item img {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s;
+    cursor: pointer;
 }
-
-.item img:hover {
-    transform: scale(1.05);
-}
-
 .item p {
     padding: 10px;
-    font-weight: bold;
     background-color: #F6E8D6;
+    font-weight: bold;
     margin: 0;
 }
-
-.contact {
-    background-color: #FFF7ED;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.contact a {
-    color: #A47148;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
     font-size: 0.9em;
-    background-color: #D7A86E;
-    color: white;
+    color: #FFF7ED;
+    text-decoration: underline;
 }
-
-/* Lightbox styles */
 .lightbox {
     display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 99;
-    left: 0;
-    top: 0;
+    top: 0; left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(62, 62, 62, 0.8);
+    background: rgba(62, 62, 62, 0.8);
 }
-
 .lightbox-content {
     position: relative;
+    background: white;
     max-width: 90%;
     max-height: 90%;
-    background-color: white;
     padding: 10px;
     border-radius: 6px;
     text-align: center;
 }
-
 .lightbox-content img {
     max-width: 100%;
     max-height: 70vh;
 }
-
-.lightbox-content p {
-    margin-top: 10px;
-    color: #3E3E3E;
-}
-
 .close-btn {
     position: absolute;
     top: -10px;
     right: -10px;
-    font-size: 30px;
+    background: #A47148;
     color: white;
-    background-color: #A47148;
+    font-size: 24px;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    line-height: 30px;
     font-weight: bold;
 }

@@ -1,59 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tealia Yang Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tealia Yang 作品集</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <h1>Tealia Yang</h1>
-        <p>平面設計 / 品牌視覺 / 動態影像</p>
-    </header>
-
-    <section class="portfolio">
-        <h2>作品集類別</h2>
-        <div class="grid">
-            <div class="item"><img src="https://via.placeholder.com/600x400" alt="品牌聯名" onclick="openLightbox(this.src, this.alt)"><p>品牌聯名</p></div>
-            <div class="item"><img src="https://via.placeholder.com/600x400" alt="菜單設計" onclick="openLightbox(this.src, this.alt)"><p>菜單設計</p></div>
-            <div class="item"><img src="https://via.placeholder.com/600x400" alt="活動視覺" onclick="openLightbox(this.src, this.alt)"><p>活動視覺</p></div>
-            <div class="item"><img src="https://via.placeholder.com/600x400" alt="剪輯後製" onclick="openLightbox(this.src, this.alt)"><p>剪輯後製</p></div>
-            <div class="item"><img src="https://via.placeholder.com/600x400" alt="MG動畫" onclick="openLightbox(this.src, this.alt)"><p>MG動畫</p></div>
-            <div class="item"><img src="https://via.placeholder.com/600x400" alt="社群圖" onclick="openLightbox(this.src, this.alt)"><p>FB / IG 社群圖</p></div>
-            <div class="item"><img src="https://via.placeholder.com/600x400" alt="商品情境照" onclick="openLightbox(this.src, this.alt)"><p>商品情境照發想</p></div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>聯絡方式</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>Instagram: <a href="https://instagram.com/yourusername" target="_blank">@yourusername</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Tealia Yang. All rights reserved.</p>
-    </footer>
-
-    <!-- Lightbox modal -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <div class="lightbox-content">
-            <span class="close-btn" onclick="closeLightbox()">×</span>
-            <img id="lightbox-img" src="" alt="">
-            <p id="lightbox-caption"></p>
-        </div>
-    </div>
-
-    <script>
-        function openLightbox(src, alt) {
-            document.getElementById('lightbox').style.display = 'flex';
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox-caption').textContent = alt;
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').style.display = 'none';
-        }
-    </script>
+  <header>
+    <h1>Tealia Yang</h1>
+    <p>平面設計 / 品牌視覺 / 動態影像</p>
+  </header>
+  <section class="grid">
+    <div class="item"><a href="collabs.html"><img src="images/collab-sanrio-cover.jpg" alt="品牌聯名"/><p>品牌聯名</p></a></div>
+  </section>
 </body>
 </html>
